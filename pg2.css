@@ -1,0 +1,109 @@
+body{
+  margin: 5px;
+  padding: 0;
+  background-color: #000;
+}
+
+button{
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30 px;
+  cursor:pointer;
+  transition: 0.3s;
+  margin: 20px;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    margin: 0;
+    padding: 12px 24px;
+    text-align: center;
+}
+
+
+.centre {
+  text-align:center;
+    margin: 10px;
+    padding: 10px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yepp-css{
+
+  
+    background-color: #9474ff ;
+    border:  white ;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    
+  }
+
+  .no-css{
+    background-color: white  ;
+    border: 2px  7CB9E8 ;
+    color: black;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: normal;
+    margin: 0;
+    padding: 12px 24px;
+    text-align: center;
+
+  }
+  
+
+
+  .glow {
+    position: relative;
+    margin: 300px auto 0;
+  width: auto;
+  height:auto;
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  
+  .glow:before, .glow:after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .glow:after {
+    filter: blur(50px);
+  }
+
+  .happy-css{
+    height:100%;
+    place-self: center;
+	background: linear-gradient(90deg, #00f, #0ff, #00f) -100%/ 200%;
+  -webkit-background-clip: text;
+	        background-clip: text;
+          color: transparent;
+	font: 900 clamp(2em, 10vw, 10em) exo, sans-serif;
+	animation: shimmer 2s linear infinite
+}
+
+@keyframes shimmer { to { background-position: 100% } }
+  
