@@ -1,9 +1,4 @@
-const button = document.getElementById('confettiButton');
-
-const div =document.getElementById('mydiv');
-
-
-button.addEventListener('click',()=>{
+function startConfetti() {
   const duration = 3*1000;
   const animationEnd=Date.now()+duration;
   const defaults ={
@@ -11,8 +6,7 @@ button.addEventListener('click',()=>{
     spread:360,
     ticks:120,
     zIndex: 1000
-
-
+    
   }
   const interval= setInterval (()=>{
     const timeLeft=animationEnd-Date.now();
@@ -20,7 +14,7 @@ button.addEventListener('click',()=>{
       return clearInterval(interval);
     }
 
-    for (let i=0;i<3;i++){
+    for (let i=0;i<5;i++){
      confetti(Object.assign({},defaults,{
       particleCount:25,
       origin:{
@@ -31,10 +25,15 @@ button.addEventListener('click',()=>{
     },150);
   
 
-})
- function changeContent(){
-  div.innerHTML='<p class ="happy-css centre"> HAPPY <br> BIRTHDAY <br> HAMZAH</p>';
- }
+}
+startConfetti();
+document.innerHeight=screen.height;
 
- button.addEventListener('click',changeContent);
+
+ 
+
+ 
+
+ 
+
 
